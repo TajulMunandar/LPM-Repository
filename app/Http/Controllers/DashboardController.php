@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Berita;
+use App\Models\Document;
+use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -12,7 +16,31 @@ class DashboardController extends Controller
     public function index()
     {
         $page = 'Dashboard';
-        return view('dashboard.pages.index')->with(compact('page'));
+        $startDate = now()->subDays(6)->startOfDay();
+        $endDate = now()->endOfDay();
+
+        $documents = Document::whereBetween('created_at', [$startDate, $endDate])
+            ->selectRaw('DATE(created_at) as date, COUNT(*) as total')
+            ->groupBy('date')
+            ->orderBy('date')
+            ->get();
+        // Format label & data untuk chart
+        $labels = [];
+        $data = [];
+
+        // Bikin semua tanggal dulu (biar tetap muncul meskipun kosong)
+        for ($i = 0; $i < 7; $i++) {
+            $date = $startDate->copy()->addDays($i)->format('Y-m-d');
+            $labels[] = $date;
+
+            $record = $documents->firstWhere('date', $date);
+            $data[] = $record ? $record->total : 0;
+        }
+
+        $documentsCount = Document::count();
+        $newsCount = Berita::count();
+        $userCount = User::count();
+        return view('dashboard.pages.index', compact('page', 'labels', 'data', 'documentsCount', 'newsCount', 'userCount'));
     }
 
     /**
