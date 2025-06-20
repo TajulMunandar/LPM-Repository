@@ -2,13 +2,9 @@
 
 @section('content')
     <!-- Page Title -->
-
-
     <div class="container">
         <div class="row">
-
             <div class="col-lg-12">
-
                 <section id="blog-posts" class="blog-posts section">
                     <div class="container">
                         <div class="row gy-4">
@@ -19,7 +15,6 @@
                                             <img src="{{ asset('storage/' . $berita->gambar) }}" alt="{{ $berita->judul }}"
                                                 class="img-fluid">
                                         </div>
-
                                         <h2 class="title">
                                             <a href="{{ route('news.show', $berita->id) }}">{{ $berita->judul }}</a>
                                         </h2>

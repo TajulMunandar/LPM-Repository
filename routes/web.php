@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\DocumentMainController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\NewsMainController;
 use App\Http\Controllers\UsersController;
@@ -23,7 +24,8 @@ Route::post('/register', [AuthController::class, 'store'])->name('register.store
 Route::post('/login', [AuthController::class, 'login'])->name('login.store');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-
 Route::get('/', [MainController::class, 'index']);
 Route::get('/news', [NewsMainController::class, 'index']);
+Route::get('/document', [DocumentMainController::class, 'index']);
+Route::get('/documents/{id}', [DocumentMainController::class, 'show'])->name('documents.show');
 Route::get('/news/{id}', [NewsMainController::class, 'show'])->name('news.show');

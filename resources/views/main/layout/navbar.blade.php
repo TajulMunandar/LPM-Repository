@@ -12,11 +12,11 @@
                 <li class="dropdown"><a href="about.html"><span>Document</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li><a href="team.html">Pusat Audit Mutu</a></li>
-                        <li><a href="testimonials.html" style="font-size: 13px">Pusat Pengembangan Standart
-                                Mutu Akademik</a></li>
-                        <li><a href="testimonials.html" style="font-size: 13px">Pusat Pengembangan Standart
-                                Mutu Non Akademik</a></li>
+                        <li><a href="/document?jenis=1">Pusat Audit Mutu</a></li>
+                        <li><a href="/document?jenis=2" style="font-size: 13px">Pusat Pengembangan Standar Mutu
+                                Akademik</a></li>
+                        <li><a href="/document?jenis=3" style="font-size: 13px">Pusat Pengembangan Standar Mutu Non
+                                Akademik</a></li>
                     </ul>
                 </li>
 
