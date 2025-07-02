@@ -14,7 +14,7 @@
                 <ul class="list-unstyled" style="color: #777777">
                     <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Jl. Yos Sudarso/A. Dimot No. 10, Takengon,
                         Aceh Tengah – Aceh</li>
-                    <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i>(0643) 23268 / 22422</li>
+                    <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i>+62 852-6143-5599</li>
                     <li><i class="bi bi-envelope-fill me-2"></i>humas@iaintakengon.ac.id</li>
                 </ul>
             </div>
