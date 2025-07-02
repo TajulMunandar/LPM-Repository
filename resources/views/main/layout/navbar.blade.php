@@ -9,10 +9,27 @@
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li class="dropdown"><a href="about.html"><span>Document</span> <i
+                <li><a href="https://karirlink.page.link/mrWCqrfGfxZMYTpq7">Tracer Study</a></li>
+                <li class="dropdown"><a href="#"><span>Survei</span> <i
                             class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li><a href="/document?jenis=1">Pusat Audit Mutu</a></li>
+                        <li><a href="https://karirlink.page.link/GawLu3nhARahBfsg8" style="font-size: 13px">Survei
+                                Pengguna Lulusan</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://bkd.iaintakengon.web.id/3.0/index.php">BKD</a></li>
+                <li class="dropdown"><a href="#"><span>Akreditasi</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="/document?jenis=4" style="font-size: 13px">Sertifikat Akreditasi</a></li>
+                        <li><a href="/document?jenis=5" style="font-size: 13px">Instrumen Akreditasi</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Document</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="/document?jenis=1" style="font-size: 13px">Pusat Audit dan Pengendalian Mutu</a>
+                        </li>
                         <li><a href="/document?jenis=2" style="font-size: 13px">Pusat Pengembangan Standar Mutu
                                 Akademik</a></li>
                         <li><a href="/document?jenis=3" style="font-size: 13px">Pusat Pengembangan Standar Mutu Non

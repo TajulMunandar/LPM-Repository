@@ -60,6 +60,8 @@
                                 Mutu Akademik</option>
                             <option value="3" {{ old('jenis') == 3 ? 'selected' : '' }}>Pusat Pengembangan Standart
                                 Mutu Non Akademik</option>
+                            <option value="4" {{ old('jenis') == 4 ? 'selected' : '' }}>Sertifikat Akreditasi</option>
+                            <option value="5" {{ old('jenis') == 5 ? 'selected' : '' }}>Instrumen Akreditasi</option>
 
                         </select>
                         @error('jenis')
