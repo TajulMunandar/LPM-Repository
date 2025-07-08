@@ -27,7 +27,8 @@
 
                     <div class="mb-3">
                         <label for="isi" class="form-label">Isi Berita</label>
-                        <textarea name="isi" class="form-control @error('isi') is-invalid @enderror" id="isi" rows="5" required>{{ old('isi') }}</textarea>
+                        <textarea name="isi" id="summernote" class="form-control @error('isi') is-invalid @enderror" id="isi"
+                            rows="5" required>{{ old('isi') }}</textarea>
                         @error('isi')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
