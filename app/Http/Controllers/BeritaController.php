@@ -33,13 +33,12 @@ class BeritaController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'judul' => 'required|string|max:255',
-            'isi' => 'required',
-            'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048'
-        ]);
-
         try {
+            $request->validate([
+                'judul' => 'required|string|max:255',
+                'isi' => 'required',
+                'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048'
+            ]);
             $data = $request->only(['judul', 'isi']);
             $data['slug'] = Str::slug($request->judul);
 
@@ -90,13 +89,12 @@ class BeritaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $request->validate([
-            'judul' => 'required|string|max:255',
-            'isi' => 'required',
-            'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048'
-        ]);
-
         try {
+            $request->validate([
+                'judul' => 'required|string|max:255',
+                'isi' => 'required',
+                'gambar' => 'nullable|image|mimes:jpg,jpeg,png|max:2048'
+            ]);
             $berita = Berita::findOrFail($id);
             $berita->judul = $request->judul;
             $berita->isi = $request->isi;

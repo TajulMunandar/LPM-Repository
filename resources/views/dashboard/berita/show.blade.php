@@ -15,7 +15,7 @@
                         style="max-height: 300px;">
                 @endif
 
-                <p>{!! nl2br(e($berita->isi)) !!}</p>
+                <p> {!! $berita->isi !!}</p>
 
                 <a href="{{ route('berita.index') }}" class="btn btn-secondary mt-3">Kembali</a>
             </div>
